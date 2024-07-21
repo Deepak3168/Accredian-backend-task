@@ -3,8 +3,10 @@ const { PrismaClient } = require('@prisma/client');
 const bodyParser = require('body-parser');
 const { body, validationResult } = require('express-validator');
 const sendReferralEmail = require('./emailService');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 const prisma = new PrismaClient();
 
 app.use(bodyParser.json());
