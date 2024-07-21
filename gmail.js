@@ -1,6 +1,5 @@
 const { google } = require('googleapis');
 const MailComposer = require('nodemailer/lib/mail-composer');
-const credentials = require('./credentials.json');
 const tokens = require('./token.json');
 require('dotenv').config();
 
