@@ -5,3 +5,4 @@ auth.js
 token.js
 server.js
 credentials.json
+.env
